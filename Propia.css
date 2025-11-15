@@ -1,0 +1,76 @@
+/* VARIABLES DE COLOR */
+:root {
+  --fondo: #000000;
+  --texto: #ffffff;
+  --acento: #007bff;
+  --tarjeta: #1c1a44;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: var(--fondo);
+  color: var(--texto);
+  text-align: center;
+  padding: 40px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* TITULOS */
+h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+h2 span {
+  color: var(--acento);
+}
+
+/* PARRAFOS */
+p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+}
+
+/* BOTÓN PARA CONTACTAR */
+a img {
+  transition: transform 0.3s;
+  margin: 10px;
+}
+
+a img:hover {
+  transform: scale(1.15);
+}
+
+/* FOOTER */
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: var(--tarjeta);
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+/* BOTON DE MODO OSCURO */
+#modo {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background: var(--tarjeta);
+  padding: 10px 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border: none;
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+#modo:hover {
+  transform: scale(1.1);
+}
